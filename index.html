@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1>Calculator App</h1>
+        <br><br><br>
+        <h4 id="color_red">Note: Enter both numbers and then press the operations.</h4>
+        <br><br>
+        <h3>Number 1</h3>
+        <br>
+        <input id="number1" type="number" placeholder="Number 1">
+        <br><br>
+        <button class="btn btn-info" onclick="add()">+</button>
+        <button class="btn btn-info" onclick="subtract()">-</button>
+        <button class="btn btn-info" onclick="multiply()">×</button>
+        <button class="btn btn-info" onclick="divide()">÷</button>
+        <br><br>
+        <h3>Number 2</h3>
+        <br>
+        <input id="number2" type="number" placeholder="Number 2">
+        <br><br>
+        <h1 id="result"></h1>
+    </center>
+</body>
